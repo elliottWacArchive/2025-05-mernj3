@@ -72,8 +72,6 @@ const userSchema = new mongoose.Schema({
     },
 });
 
-// ... après les autres schémas et avant les modèles
-
 const categorySchema = new mongoose.Schema({
     id: {
         type: Number,
