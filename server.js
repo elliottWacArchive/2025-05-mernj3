@@ -162,9 +162,9 @@ app.get("/shop", authenticateUser, async (req, res) => {
         const products = await Product.find({}, "id title price");
         res.status(200).json(products);
     } catch (error) {
-        console.error("Erreur lors de la récupération des produits:", error);
+        console.error("erreur produit:", error);
         res.status(400).json({
-            error: "Erreur lors de la récupération des produits",
+            error: "erreur produit",
         });
     }
 });
